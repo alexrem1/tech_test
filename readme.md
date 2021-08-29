@@ -1,3 +1,3 @@
 # Technical Test
 
-### [Click to view portfolio project](https://alexrem1.github.io/tech_test/templates/index.html)
+### [Click to view techical test](https://acr74658-tech-test-app.herokuapp.com/)

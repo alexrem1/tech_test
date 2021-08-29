@@ -1,0 +1,90 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.pay {
+  height: 100%;
+  width: 50%;
+  padding-top: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-style: solid;
+  border-color: #ff652f;
+  margin-top: 10%;
+  margin-left: 25%;
+  padding: 4rem;
+}
+
+.pay .title {
+  text-align: center;
+  margin: 3rem;
+  text-shadow: 0px 3px 0px #b2a98f, 0px 14px 10px rgba(0, 0, 0, 0.15), 0px 24px 2px rgba(0, 0, 0, 0.1), 0px 34px 30px rgba(0, 0, 0, 0.1);
+}
+
+.pay-form-single {
+  text-align: center;
+  margin: 2rem 0rem;
+}
+
+.pay-form-single input {
+  width: 100%;
+  border-radius: 0.5rem;
+  border-style: none;
+  line-height: 2.5rem;
+  padding-left: 1rem;
+}
+
+.pay-form-submit {
+  margin: 3rem 0rem;
+  border-radius: 0.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  line-height: 6rem;
+  border-style: solid;
+  border-color: #ff652f;
+  background-color: #c1c3dd;
+  font-size: xx-large;
+  font-weight: lighter;
+}
+
+.pay-form-submit:hover {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  color: #000;
+  background-color: #ff652f;
+  font-weight: bolder;
+}
+
+.pay-total {
+  text-align: center;
+  font-weight: bolder;
+}
+
+.pay-total-empty {
+  text-align: center;
+  font-weight: lighter;
+  text-shadow: 0px 3px 0px #b2a98f, 0px 14px 10px rgba(0, 0, 0, 0.15), 0px 24px 2px rgba(0, 0, 0, 0.1), 0px 34px 30px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  background: #c1c3dd;
+  color: #000;
+  height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+}

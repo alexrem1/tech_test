@@ -1,0 +1,43 @@
+{% extends 'base.html' %} {% block extra_title %}- Home{% endblock extra_title
+%} {% block content %}
+
+<main>
+  <section class="pay">
+      <h2 class="title">Pay Calculator</h2>
+      <form method="POST" class="pay-form">
+        <div class="pay-form-single">
+          <label for="hours">How many hours did you work?</label>
+          <input
+          type="number"
+            name="hours"
+            id="hours"
+            placeholder="Hours Worked..."
+            step="any"
+            value="{{ request.form['hours'] }}"
+          />
+        </div>
+        <div class="pay-form-single">
+          <label for="wage">How much are you paid per hour?</label>
+          <input
+            type="number" 
+            name="wage"
+            id="wage"
+            placeholder="Hourly Rate..."
+            step="any"
+            value="{{ request.form['wage'] }}"
+          />
+        </div>
+        <button type="submit" class="pay-form-submit">Submit</button>
+      </form>
+     
+      {% if result %}
+      <h5 class="pay-total">{{result}}</h5>
+      {% else %}
+      <h3 class="pay-total-empty">You have not calculated your total pay yet...</h3>
+      {% endif %}
+      
+    </div>
+  </section>
+</main>
+
+{% endblock content %}

@@ -5,6 +5,11 @@
   padding: 0;
 }
 
+main {
+  height: 100%;
+  width: 100%;
+}
+
 .pay {
   height: 100%;
   width: 50%;
@@ -25,7 +30,6 @@
 
 .pay .title {
   text-align: center;
-  margin: 3rem;
   text-shadow: 0px 3px 0px #b2a98f, 0px 14px 10px rgba(0, 0, 0, 0.15), 0px 24px 2px rgba(0, 0, 0, 0.1), 0px 34px 30px rgba(0, 0, 0, 0.1);
 }
 
@@ -76,15 +80,19 @@
   text-shadow: 0px 3px 0px #b2a98f, 0px 14px 10px rgba(0, 0, 0, 0.15), 0px 24px 2px rgba(0, 0, 0, 0.1), 0px 34px 30px rgba(0, 0, 0, 0.1);
 }
 
+@media screen and (max-width: 750px) {
+  main {
+    width: 75%;
+  }
+  .pay {
+    width: 100%;
+  }
+}
+
 body {
   background: #c1c3dd;
   color: #000;
   height: 100vh;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1;
-}
-
-main {
-  height: 100%;
-  width: 100%;
 }

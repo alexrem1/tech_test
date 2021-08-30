@@ -18,3 +18,9 @@ $secondary-color: #ff652f;
     @return #fff;
   }
 }
+
+@mixin media-sm {
+  @media screen and (max-width: 750px) {
+    @content;
+  }
+}
